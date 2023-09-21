@@ -1,0 +1,297 @@
+            /*==================================== 
+                     common font link
+            ====================================*/
+
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600;700&family=Roboto:wght@400;700&display=swap");
+
+            /*==================================== 
+                     common css start
+            ====================================*/
+
+:root{
+    --primaryFont: "Josefin Sans", sans-serif;
+    --secondaryFont: "Roboto", sans-serif;
+    --logoColor: #ff6f61;
+    --textColor:#11161e;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul, ol, li{
+    list-style: none;
+}
+  
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+
+h1, h2, h3, h4, h5, h6, ul, li, ol, p, span{
+  margin: 0;
+  padding: 0;
+}
+
+            /*==================================== 
+                     common font family
+            ====================================*/
+
+body{
+    font-family: var(--primaryFont);
+}
+
+            /*==================================== 
+                     common css end
+            ====================================*/
+
+
+        /*==================================== 
+                    Table Contant:
+        Website Name: Aytor e-commerce
+        Developer: Ideatech BD
+        Developer URL: 
+        Licence:    
+
+                1.Home
+                    * navbar
+                    * banner
+                    * service
+                    * fotter
+        ====================================*/
+
+                    /* Home Page
+
+            /*==================================== 
+                     nav bar start
+            ====================================*/
+
+        /*====================================================== 
+            large (lg) device nav menu list item style design
+        ======================================================*/
+
+.myCustomNav #navMenu ul li a{
+    padding: 37px 22.5px;
+    color:var(--textColor);
+    font-size: 16px;
+    line-height: 26px;
+}
+        
+            /*============================================== 
+                large (lg) device nav menu list item hover
+            ==============================================*/
+                  
+.myCustomNav #navMenu ul li:hover a{
+    color: var(--logoColor);
+}
+
+            /*===================================================== 
+                 large (lg) device icon group style design start
+            =====================================================*/
+         
+.myCustomNav .iconsGroup li span,
+.myCustomNav .iconsGroup li a{
+    color: var(--textColor);
+    margin: 0 10px;
+    position: relative;
+    font-size: 20px;
+
+}
+
+.myCustomNav .iconsGroup li{
+    display: inline-block;
+}
+
+            /*==================================================== 
+                large (lg) device icon cartNumber 0 style design
+            ====================================================*/
+          
+.myCustomNav .iconsGroup li a span.cartNumber{
+    background-color: var(--logoColor);
+    color: white;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    text-align: center;
+    line-height: 17px;
+    position: absolute;
+    top: -5px;
+    right: -17px;
+    font-size: 15px;
+}
+
+
+.smNavbar .offcanvas-header img{
+    width: 80px;
+}
+
+            /*==================================================== 
+                small (sm) device icon cartNumber 0 style design
+            ====================================================*/
+          
+.smNavbar .iconsGroup li a span.cartNumber{
+background-color: var(--logoColor);
+color: white;
+border-radius: 50%;
+width: 15px;
+height: 15px;
+display: inline-block;
+text-align: center;
+line-height: 17px;
+position: absolute;
+top: -5px;
+right: -17px;
+font-size: 15px;
+}
+
+            /*========================================================== 
+                 small (sm) device icon group cartNumber 0 style design
+            ==========================================================*/
+         
+.smNavbar .iconsGroup li span,
+.smNavbar .iconsGroup li a{
+    color: var(--textColor);
+    margin: 0 10px;
+    position: relative;
+    font-size: 20px;
+}
+
+
+.smMenu ul li{
+    display: block;
+}
+
+
+            /*=============================================== 
+                 small (sm) device menu button style design
+            ===============================================*/
+
+.smNavbar .menu button{
+    border: none;
+    font-size: 22px;
+    background-color: white;
+}
+
+            /*====================================================== 
+                 small (sm) device sidebar button menu style design
+            =======================================================*/
+
+
+.smNavbar .smMenu ul li a{
+    display: block;
+    color: var(--textColor);
+    padding: 15px 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+/*====================================================== 
+    banner slide contant large (lg) device style design
+=======================================================*/
+
+#banner .slide{
+    height: 800px;
+    background-size: cover;  
+    background-position: center;
+}
+
+
+#banner .slide h5{
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 600;
+    color: var(--textColor);
+    transition-delay: 0.1s;
+}
+
+
+#banner .slide h2{
+    font-size: 64px;
+    line-height: 74px;
+    font-weight: 700;
+    color: var(--textColor);
+    margin: 14px 0;
+    transition-delay: 0.2s;
+}
+
+
+#banner .slide p{
+    font-family: var(--secondaryFont);
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: 400;
+    color: var(--textColor);
+    transition-delay: 0.3s;
+}
+
+
+#banner .slide a{
+    background-color: var(--logoColor);
+    margin-top: 29px;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 30px;
+    color: white;
+    padding: 13px 37px;
+    transition-delay: 0.4s;
+}
+
+/*====================================================== 
+    banner slide annimation large (lg) device style design
+=======================================================*/
+
+#banner .slide *{
+    transform: translateY(80px);
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s ease-in;
+}
+
+#banner .slide.slick-active *{
+    transform: translateY(0px);
+    opacity: 1;
+    visibility: visible;
+}
+
+#banner{
+    position: relative;
+}
+
+
+#banner .bannerDots{
+    position: absolute;
+    bottom: 26%;
+    width: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+/*====================================================== 
+    banner slide dot large (lg) device style design
+=======================================================*/
+
+#banner .bannerDots li {
+    display: inline-block;
+}
+#banner .bannerDots li button{
+    border: none;
+    color: transparent;
+    width: 13px;
+    height: 8px;
+    border-radius: 5px;
+    background-color: white;
+    margin-right: 5px;
+    transition: 0.3s;
+}
+
+/*====================================================== 
+    banner slide active dot large (lg) device style design
+=======================================================*/
+
+#banner .bannerDots li.slick-active button{
+    width: 30px;
+    background-color: var(--logoColor);
+}
